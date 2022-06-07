@@ -1,0 +1,17 @@
+#input-box{
+    width: 100%;
+}
+.center{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.text-color{
+    color: #fff;
+    font-family: sans-serif;
+}
+#result{
+    font-size: larger;
+    font-family: sans-serif;;
+    color: #fff;
+    font-weight: bold;
+}
