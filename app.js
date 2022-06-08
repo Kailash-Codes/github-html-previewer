@@ -21,11 +21,29 @@ let typeIn = typeInput.value;
     }
     else if(typeIn=="main"){
         let initialInput = input.value;
+
+        //matching tree
+        if(initialInput.match("tree")){
+            console.log("blob or tree found");
         
         let notFinal = "https://htmlpreview.github.io/?"+`${initialInput}`+"/index.html";
         let final = notFinal.replace("tree","blob");
         res.innerHTML=final;
     }
+    //matching blob
+        else if(initialInput.match("blob")){
+            console.log("blob or tree found");
+        
+        let notFinal = "https://htmlpreview.github.io/?"+`${initialInput}`+"/index.html";
+        let final = notFinal.replace("tree","blob");
+        res.innerHTML=final;
+    }
+    else {
+        let notFinal = "https://htmlpreview.github.io/?"+`${initialInput}`+"/blob/main/index.html";
+        res.innerHTML=notFinal;
+        
+    }
+}
 
 
     e.preventDefault();
