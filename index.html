@@ -13,21 +13,23 @@
     <link rel="icon" sizes="180x180" href="html-logo.png">
   </head>
   <body>
+<div class="container-fluid">
 
-  <div class="container bg-danger mt-5">
+  <div class="container bg-danger mt-5 main">
     <h1 class="text-center text-color pt-3">
       Enter the github url
     </h1>
     <hr><br><br>
     <div class="col-sm-12">
       <form action="#">
-
-        <input type="text"  id="input-box" class="input">
+        
+        <input type="text" placeholder="eg.https://github.com/Kailash-Codes/Captcha-generator" id="input-box" class="input">
         <br><br><br>
         <hr>
         <div class="col-sm-12 text-center ">
-          <input type="text" id="type-box">
-          <p id="result"></p>
+          <h5 class="text-color">Enter branch</h5>
+          <input type="text" placeholder="e.g. main" id="type-box">
+         <br><hr> <h5  class="container text-color" id="result"></h5>
         </div>
         <hr>
         <input type="button" value="convert" class="btn btn-success center">
@@ -35,8 +37,9 @@
       <hr>
     </div>
   </div>
-
-
+</div>
+  
+  
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -1,5 +1,7 @@
+
 #input-box{
     width: 100%;
+    text-align: center;
 }
 .center{
     margin-left: 50%;
@@ -10,8 +12,33 @@
     font-family: sans-serif;
 }
 #result{
-    font-size: larger;
-    font-family: sans-serif;;
-    color: #fff;
-    font-weight: bold;
+    overflow-y: scroll;
+
+}
+
+#type-box{
+    width:20%;
+    text-align: center;
+}
+@media only screen and (max-width:457px){
+
+     body{
+         background: red;
+     }
+ }
+    
+@media only screen and (max-width:310px){
+#type-box{
+    width:40%;
+    
+}
+
+#input-box::placeholder{
+    opacity: 0;
+}
+}
+@media only screen and (max-width:230px){
+    #type-box::placeholder{
+        opacity: 0;
+    }
 }
